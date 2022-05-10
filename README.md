@@ -35,8 +35,11 @@ We will use nltk, preprocessing from Keras and sklearn to process the text data
 Tags preprocesing Use MultiLabelBinarizer from sklearn on the Class labels(Tags)
 
 from sklearn.preprocessing import MultiLabelBinarizer
+
 multilabel_binarizer = MultiLabelBinarizer()
+
 multilabel_binarizer.fit(total.Tags)
+
 print(multilabel_binarizer.classes_)
 
 array(['android', 'c#', 'c++', 'html', 'ios', 'java', 'javascript','jquery', 'php', 'python'], dtype=object)
@@ -66,9 +69,13 @@ RNN for Title has
 The fully connected network has
 
 2 Dense Layers
+
 1 Dropout layer
+
 1 BatchNormalization layer
+
 1 Dense Output layer Model Compilattion with optimizer='adam', loss='categorical_crossentropy', metrics='accuracy')
+
 Model Performance Review
 
 Classification Report to check Precision, Recall and F1 Score
