@@ -1,7 +1,12 @@
 Data set : https://www.dropbox.com/s/5721wcs2guuykzl/stacksample.zip?dl=0
-Goal : Given text for Questions , predict tags associated with them 
+
+
+Goal : Given text for Questions , predict tags associated with them
+
 This is a scaled down version of predecting only top 10 most occurring tags
+
 Programming Language : Python using nltk & Keras
+
 Model Architecture : Deep Learning using Recurrent Neural Network (RNN)
 About Data Set
 
@@ -50,7 +55,6 @@ RNN for Title has
 1 Embedding Layer has input of Title vocabulary length(1292018) + 1(for 0 padding) and out put of 170 embeddings (for better results use full vocabulary length+1)
 1 Gated recurrent unit (GRU) layer Combine the 2 GRU outputs
 The fully connected network has
-
 2 Dense Layers
 1 Dropout layer
 1 BatchNormalization layer
