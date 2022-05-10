@@ -40,6 +40,7 @@ multilabel_binarizer.fit(total.Tags)
 print(multilabel_binarizer.classes_)
 
 array(['android', 'c#', 'c++', 'html', 'ios', 'java', 'javascript','jquery', 'php', 'python'], dtype=object)
+
 Title & Body Preprocessing
 
 Tokenize the words
@@ -61,7 +62,9 @@ RNN for Title has
 1 Embedding Layer has input of Title vocabulary length(1292018) + 1(for 0 padding) and out put of 170 embeddings (for better results use full vocabulary length+1)
 
 1 Gated recurrent unit (GRU) layer Combine the 2 GRU outputs
+
 The fully connected network has
+
 2 Dense Layers
 1 Dropout layer
 1 BatchNormalization layer
