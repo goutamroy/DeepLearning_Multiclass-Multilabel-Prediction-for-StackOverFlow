@@ -10,7 +10,7 @@ Programming Language : Python using nltk & Keras
 Model Architecture : Deep Learning using Recurrent Neural Network (RNN)
 About Data Set
 
-Dataset has text of questionsand thier corresponding tags from the Stack Overflow programming Q&A website.
+Dataset has text of questions and thier corresponding tags from the Stack Overflow programming Q&A website.
 
 This is organized as three files:
 
