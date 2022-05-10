@@ -23,8 +23,11 @@ Answers contains the body, creation date, score, and owner ID for each of the an
 Tags File Code : Stackoverflow Tags Map & Model.ipynb
 
 Read Tags File
+
 Identify top 10 Tags by count
+
 Manipulate the tags dataframe so that all the Tags for an ID are as a list in a row (grouped by Question ID). Our Dataset would now have only Id, Title, Body & Tags
+
 Text Preprocessing Code : Stackoverflow Tags Map & Model.ipynb
 
 We will use nltk, preprocessing from Keras and sklearn to process the text data
@@ -50,9 +53,13 @@ RNN Model : The model first uses GRU for the sequence data training with 2 GRU l
 RNN for Title has
 
 1 Embedding Layer has input of Title vocabulary length(68969) + 1(for 0 padding) and out put of 2000 embeddings (for better results use full vocabulary length+1)
+
 1 Gated recurrent unit (GRU) layer
+
 1 dense output layer of shape 10(No of classes(tags) we are trying to predict) RNN for Body has
+
 1 Embedding Layer has input of Title vocabulary length(1292018) + 1(for 0 padding) and out put of 170 embeddings (for better results use full vocabulary length+1)
+
 1 Gated recurrent unit (GRU) layer Combine the 2 GRU outputs
 The fully connected network has
 2 Dense Layers
